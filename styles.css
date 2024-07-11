@@ -1,5 +1,5 @@
 #game {
-    top: relative
+   position: relative;
 } 
 
 #player {

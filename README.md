@@ -9,21 +9,19 @@ To play Sokoban, you can use the arrow keys to move the player character. The pl
 Sokoban is a great game to challenge your problem-solving skills and spatial reasoning. Have fun playing and enjoy the puzzles!
 
 ## Level Defenition
-In this representation:
-- `X` represents a wall
-- ` ` (space) represents an empty space
-- `@` represents the player character
-- `b` represents a box
-- `.` represents a designated location for a box
 
+The levels are defined in text files. The text files contain the following characters:
 
-## Level 1 Description
+| Character | Description     |
+| --------- | --------------- |
+| `X`       | Wall            |
+| ` `       | Empty space     |
+| `@`       | Player          |
+| `b`       | Box             |
+| `B`       | Box on a target |
+| `.`       | Target          |
 
-[
-    "XXXXX__",
-    "X   X__",
-    "X@XbXXX",
-    "X b ..X",
-    "XXXXXXX"
-  ]
+## Movement
+
+The user controls the player using the arrow keys. The player can move in four directions: up, down, left, and right. The player can push a box if there is an empty space behind the box.
 
