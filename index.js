@@ -50,6 +50,7 @@ document.onkeydown = (e) => {
         level[playerPos.y + movement.y * 2] = replaceAt(level[playerPos.y + movement.y * 2], playerPos.x + movement.x * 2, target === 'b' ? 'b' : 'B');
         level[playerPos.y + movement.y] = replaceAt(level[playerPos.y + movement.y], playerPos.x + movement.x, target === 'b' ? ' ' : '.');
         generateBlocks(level);
+        
     }
 
     // update player position
@@ -94,7 +95,9 @@ function generateBlocks(level) {
             block.className = 'cell';
             block.style.transform = `translate(${x * 64}px, ${y * 64}px)`;
             block.style.backgroundImage = `url(${getBlockImageBySymbol(level[y][x])})`;
-            game.appendChild(block, player);
+            // add blcck to game and after that the player
+            game.appendChild(block);
+            game.appendChild(player);
         }
     }
 }
