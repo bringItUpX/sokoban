@@ -1,3 +1,9 @@
+# Sources:
+
+This first game was creted with the help of this github repo and with the help of the owner of this github repo (Rainer Stropek) in a heise-academy session (writing code with the help of AI and using the openAI API for connecting to AI in own programs):
+https://github.com/rstropek/Samples/tree/master/KI/Sokoban
+
+
 # Requirements
 
 ## Sokoban
